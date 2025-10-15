@@ -1,3 +1,10 @@
+$tech-font: 'Clash Display', sans-serif;
+
 body{
     background-color: darkgray;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    min-height: 100vh; 
+    margin: 0;        
 }

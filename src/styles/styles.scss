@@ -1,34 +1,60 @@
+@import './index.scss';
+
 .board{
     display: flex;
+    flex-direction: column;
+    height: 600px;
+    width: 800px;
+    gap: 1px;
 }
 
 .hline{
     display: flex;
+    gap: 1px;
 }
 
 .vline{
     display: flex;
     flex-direction: column;
+    gap: 1px;
 }
 
 .square{
-    height: 40px;
-    width: 40px;
-    border: 1px solid lightslategrey;
+    height: 50px;
+    width: 50px;
     display: flex;
     justify-content: center;
+    border: 1px solid black;
     align-items: center;
-    background-color: lightgray;
-    color: lightslategrey;
+    background-color: lightslategrey;
+    font-family: $tech-font;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
     text-transform: uppercase;
+    border-radius: 10px;
+
+    &:hover{
+        transform: scale(1.05);
+        font-size: 21px;
+    }
 }
 
-.square:first-child{
-    border-top-left-radius: 2px;
-    border-bottom-left-radius: 2px;
-}
+// .square:first-child{
+//     border-top-left-radius: 7px;
+//     border-bottom-left-radius: 7px;
+// }
 
-.square:last-child{
-    border-top-right-radius: 2px;
-    border-bottom-right-radius: 2px;
+// .square:last-child{
+//     border-top-right-radius: 7px;
+//     border-bottom-right-radius: 7px;
+// }
+
+@keyframes hoverScale {
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(2);
+    }
 }
