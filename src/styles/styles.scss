@@ -1,0 +1,34 @@
+.board{
+    display: flex;
+}
+
+.hline{
+    display: flex;
+}
+
+.vline{
+    display: flex;
+    flex-direction: column;
+}
+
+.square{
+    height: 40px;
+    width: 40px;
+    border: 1px solid lightslategrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+    color: lightslategrey;
+    text-transform: uppercase;
+}
+
+.square:first-child{
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+
+.square:last-child{
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
